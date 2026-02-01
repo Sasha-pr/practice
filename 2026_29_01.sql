@@ -1,6 +1,4 @@
 -- +goose Up
--- ВНИМАНИЕ: команда создания БД обычно не делается в миграциях,
--- так как подключение уже должно быть к существующей БД
 -- create database golang_db;
 
 CREATE TABLE IF NOT EXISTS users(
@@ -32,4 +30,5 @@ CREATE TABLE IF NOT EXISTS ads(
 DROP TABLE IF EXISTS ads;
 DROP TABLE IF EXISTS categories;
 DROP TABLE IF EXISTS users;
+
 -- drop database golang_db;
